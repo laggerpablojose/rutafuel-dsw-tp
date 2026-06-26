@@ -1,0 +1,121 @@
+/* =========================================================
+   RutaFuel - Sass principal
+   Este archivo importa Bootstrap y luego agrega estilos propios.
+========================================================= */
+
+/* 1. Funciones de Bootstrap */
+@import "bootstrap/scss/functions";
+
+/* 2. Variables propias del proyecto */
+@import "variables";
+
+/* 3. Bootstrap completo compilado desde Sass */
+@import "bootstrap/scss/bootstrap";
+
+/* =========================================================
+   Estilos propios RutaFuel
+========================================================= */
+
+:root {
+  --rutafuel-header-footer: #4D53B6;
+  --rutafuel-accent: #6558F5;
+  --rutafuel-light: #f5f6fa;
+  --rutafuel-dark: #22223b;
+}
+
+/* Mejora básica de navegación por teclado */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 12px;
+  z-index: 9999;
+  padding: .5rem .75rem;
+  background-color: #fff;
+  color: var(--rutafuel-dark);
+  text-decoration: none;
+  border-radius: .5rem;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Header y footer comunes */
+.site-header,
+.site-footer {
+  background-color: var(--rutafuel-header-footer);
+}
+
+.site-header .navbar-brand,
+.site-header .nav-link,
+.site-footer a {
+  color: #fff;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link:focus,
+.site-header .nav-link.active {
+  color: #e9e7ff;
+}
+
+/* Botón propio del proyecto */
+.btn-rutafuel {
+  background-color: var(--rutafuel-accent);
+  border-color: var(--rutafuel-accent);
+  color: #fff;
+}
+
+.btn-rutafuel:hover,
+.btn-rutafuel:focus {
+  background-color: #5548db;
+  border-color: #5548db;
+  color: #fff;
+}
+
+/* Secciones base */
+.section-padding {
+  padding: 4rem 0;
+}
+
+.bg-soft {
+  background-color: var(--rutafuel-light);
+}
+
+.page-hero {
+  padding: 4rem 0;
+  background-color: var(--rutafuel-light);
+}
+
+.page-hero h1 {
+  color: var(--rutafuel-dark);
+}
+
+.text-accent {
+  color: var(--rutafuel-accent);
+}
+
+/* Cajas placeholder para que cada integrante complete */
+.placeholder-box {
+  border: 2px dashed #c9c9d8;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+/* Cards base */
+.card-rutafuel {
+  border: 1px solid #e2e2ea;
+  border-radius: 1rem;
+  height: 100%;
+}
+
+/* Responsive mínimo adicional al comportamiento de Bootstrap */
+@media (max-width: 576px) {
+  .section-padding {
+    padding: 2.5rem 0;
+  }
+
+  .page-hero {
+    padding: 3rem 0;
+  }
+}

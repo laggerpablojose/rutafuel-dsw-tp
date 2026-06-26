@@ -1,0 +1,16 @@
+# Dependencias usadas solo para compilar Sass
+node_modules/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Configuraciones locales de editores
+.vscode/
+.idea/
+
+# Archivos comprimidos de entrega
+*.zip
+*.rar
+*.tar
+*.gz

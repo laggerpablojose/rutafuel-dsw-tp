@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RutaFuel | Estación de servicio</title>
+    <meta name="description"
+        content="Sitio institucional de RutaFuel, estación de servicio ficticia con información sobre servicios, promociones, nosotros y ubicación.">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+    <!-- Header común del sitio -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">RutaFuel</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRutaFuel"
+                    aria-controls="navbarRutaFuel" aria-expanded="false" aria-label="Abrir navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarRutaFuel">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido-principal" class="flex-grow-1">
+
+        <!-- Portada: completar contenido final según mockup del TP1 -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <p class="text-accent fw-semibold mb-2">Estación de servicio</p>
+                        <h1 class="display-5 fw-bold">RutaFuel</h1>
+                        <p class="lead">Una propuesta institucional para presentar servicios, promociones e información
+                            útil para quienes están en camino.</p>
+                        <a class="btn btn-rutafuel btn-lg" href="servicios.html"
+                            data-rf-event="cta-inicio-servicios">Ver servicios</a>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="placeholder-box text-center">
+                            <p class="mb-0">Espacio reservado para imagen principal o recurso visual de portada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resumen de secciones internas -->
+        <section class="section-padding">
+            <div class="container">
+                <h2 class="mb-4">Secciones principales</h2>
+
+                <div class="row g-4">
+                    <article class="col-md-6 col-lg-3">
+                        <div class="card card-rutafuel">
+                            <div class="card-body">
+                                <h3 class="h5">Servicios</h3>
+                                <p>Base para presentar combustibles, tienda y atención al cliente.</p>
+                                <a href="servicios.html" class="stretched-link">Ver sección</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-6 col-lg-3">
+                        <div class="card card-rutafuel">
+                            <div class="card-body">
+                                <h3 class="h5">Promociones</h3>
+                                <p>Base para destacar beneficios, descuentos y novedades.</p>
+                                <a href="promociones.html" class="stretched-link">Ver sección</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-6 col-lg-3">
+                        <div class="card card-rutafuel">
+                            <div class="card-body">
+                                <h3 class="h5">Nosotros</h3>
+                                <p>Base para comunicar identidad, valores e historia ficticia.</p>
+                                <a href="nosotros.html" class="stretched-link">Ver sección</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-md-6 col-lg-3">
+                        <div class="card card-rutafuel">
+                            <div class="card-body">
+                                <h3 class="h5">Ubicación</h3>
+                                <p>Base para mostrar dirección, referencia y datos de llegada.</p>
+                                <a href="ubicacion.html" class="stretched-link">Ver sección</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer común del sitio -->
+    <footer class="site-footer text-white py-4 mt-auto">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center g-3">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; <span class="js-anio">2026</span> RutaFuel. Proyecto académico UTN FRSF.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="index.html" class="text-white text-decoration-none me-3">Inicio</a>
+                    <a href="ubicacion.html" class="text-white text-decoration-none">Ubicación</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS: necesario para navbar collapse y otros componentes -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript propio -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
