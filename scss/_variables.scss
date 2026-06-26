@@ -1,0 +1,26 @@
+/* =========================================================
+   Variables RutaFuel
+   Este archivo modifica valores base de Bootstrap antes
+   de compilar el CSS final.
+========================================================= */
+
+/* Colores definidos por identidad visual del proyecto */
+$rutafuel-header-footer: #4D53B6;
+$rutafuel-accent: #6558F5;
+$rutafuel-light: #f5f6fa;
+$rutafuel-dark: #22223b;
+
+/* Personalización simple de Bootstrap */
+$primary: $rutafuel-accent;
+$secondary: $rutafuel-header-footer;
+$light: $rutafuel-light;
+$dark: $rutafuel-dark;
+
+/* Ajustes visuales generales */
+$border-radius: .75rem;
+$border-radius-lg: 1rem;
+$font-family-base: Arial, Helvetica, sans-serif;
+
+/* Links */
+$link-color: $rutafuel-accent;
+$link-hover-color: darken($rutafuel-accent, 10%);
