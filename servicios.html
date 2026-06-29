@@ -44,10 +44,54 @@
 
         <section class="page-hero">
             <div class="container">
-                <p class="text-accent fw-semibold mb-2">Sección interna</p>
-                <h1 class="display-5 fw-bold">Servicios</h1>
-                <p class="lead">Base de contenido para que el integrante responsable complete los servicios definitivos
-                    de RutaFuel.</p>
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <p class="text-accent fw-semibold mb-2">Sección interna</p>
+                        <h1 class="display-5 fw-bold">Servicios</h1>
+                        <p class="lead">Todo lo que necesitás encontrar en una sola parada: combustibles, tienda y
+                            atención pensada para quienes están en ruta.</p>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div id="carouselServicios" class="carousel slide rounded-4 overflow-hidden shadow-sm"
+                            data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Surtidores de RutaFuel"></button>
+                                <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="1"
+                                    aria-label="Fachada de RutaFuel"></button>
+                                <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="2"
+                                    aria-label="Cobertura de RutaFuel"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/content/surtidores-rutafuel.webp" class="d-block w-100"
+                                        alt="Surtidores de combustible RutaFuel con mangueras de Infinia, Super y Diesel 500">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/content/fachada-estacion-noche.webp" class="d-block w-100"
+                                        alt="Fachada iluminada de una estación de servicio RutaFuel durante la noche">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/content/mapa-cobertura-rutafuel.webp" class="d-block w-100"
+                                        alt="Mapa con la cobertura de estaciones RutaFuel en Argentina">
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -60,7 +104,8 @@
                         <div class="card card-rutafuel">
                             <div class="card-body">
                                 <h3 class="h5">Combustibles</h3>
-                                <p>Completar con tipos de combustible, beneficios y mensajes institucionales.</p>
+                                <p>Infinia, Super, Diesel 500 y GNC, con surtidores señalizados para que encuentres
+                                    rápido el que necesitás.</p>
                             </div>
                         </div>
                     </article>
@@ -69,7 +114,8 @@
                         <div class="card card-rutafuel">
                             <div class="card-body">
                                 <h3 class="h5">Tienda</h3>
-                                <p>Completar con productos, alimentos, bebidas o conveniencia.</p>
+                                <p>Cafetería, bebidas y productos de conveniencia para acompañar tu parada en
+                                    cualquier momento del viaje.</p>
                             </div>
                         </div>
                     </article>
@@ -78,7 +124,8 @@
                         <div class="card card-rutafuel">
                             <div class="card-body">
                                 <h3 class="h5">Atención al viajero</h3>
-                                <p>Completar con servicios complementarios para clientes en ruta.</p>
+                                <p>Lavado de vehículos y asistencia básica, pensados para que sigas tu camino sin
+                                    contratiempos.</p>
                             </div>
                         </div>
                     </article>
@@ -88,10 +135,41 @@
 
         <section class="section-padding bg-soft">
             <div class="container">
-                <div class="placeholder-box">
-                    <h2 class="h4">Área editable por el integrante</h2>
-                    <p class="mb-0">Agregar acá contenido final, imágenes con atributo alt y componentes Bootstrap si
-                        corresponde.</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="h4 mb-3">Contactate con nosotros</h2>
+                        <p>¿Tenés alguna consulta sobre nuestros servicios? Escribinos y te respondemos a la
+                            brevedad.</p>
+
+                        <form class="row g-3 needs-validation" novalidate id="formContactoServicios">
+                            <div class="col-md-6">
+                                <label for="contactoNombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="contactoNombre" required>
+                                <div class="invalid-feedback">Ingresá tu nombre.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="contactoEmail" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="contactoEmail" required>
+                                <div class="invalid-feedback">Ingresá un correo electrónico válido.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="contactoMensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="contactoMensaje" rows="3" required></textarea>
+                                <div class="invalid-feedback">Contanos brevemente tu consulta.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn btn-rutafuel" type="submit" data-rf-event="contacto-servicios-enviar">
+                                    Enviar consulta
+                                </button>
+                                <p class="form-text mt-2 mb-0 d-none" id="contactoConfirmacion">
+                                    ¡Gracias! Tu consulta fue registrada correctamente.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
