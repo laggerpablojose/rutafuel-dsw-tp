@@ -13,9 +13,18 @@
   con fotografías reales de la estación (fachada, surtidores y mapa de cobertura), en lugar de una sola
   imagen estática como sugería el mockup original. Se mantiene el resto de la estructura del TP1 (slogan,
   grilla de servicios, bloques destacados).
-- En `servicios.html` se agregó el bloque "Contactate con nosotros" del wireframe como un formulario corto
-  (nombre, email, mensaje) con validación de Bootstrap, en vez de un formulario extenso. Se prioriza así no
-  duplicar el formulario más completo de "trabajá con nosotros" que corresponde a la sección Nosotros.
+- `servicios.html` se maquetó siguiendo el mockup definitivo del informe del TP1 ("Tu parada estratégica en
+  el camino"): carousel superior, bajada institucional, y los 3 bloques de servicio en formato imagen+texto
+  alternado (Combustibles de Máxima Evolución, Pará Recargá y Continuá, Cuidado Experto para tu Vehículo),
+  cerrando con el formulario de contacto corto con validación de Bootstrap.
+  - Para el bloque "Pará, Recargá y Continuá" se incorporó una fotografía nueva de cafetería
+    (`img/content/cafeteria-rutafuel.webp`), ya que el proyecto no contaba con una imagen propia para ese
+    servicio.
+  - Para el bloque "Cuidado Experto para tu Vehículo" se reutilizó la fotografía de personal
+    (`img/content/personal-rutafuel.webp`) en lugar de una imagen de mantenimiento/cambio de aceite, porque
+    la única disponible para ese momento mostraba productos de una marca comercial real (no ficticia), lo
+    que generaría un conflicto de marca dentro de un proyecto institucional propio. Queda pendiente
+    reemplazarla por una fotografía propia de un box de servicio si el grupo consigue una.
 - Pendiente de completar por cada integrante a medida que se avance con Promociones, Nosotros y Ubicación.
 
 ## Estructura del sitio
@@ -99,6 +108,7 @@ sin espacios ni acentos:
 | Surtidores RutaFuel.png | surtidores-rutafuel.webp | ~1.85 MB | ~72 KB |
 | Mapa ubicaciones RutaFuel.png | mapa-cobertura-rutafuel.webp | ~1.80 MB | ~75 KB |
 | Personal RutaFuel.png | personal-rutafuel.webp | ~1.86 MB | ~64 KB |
+| (fotografía nueva, cafetería) | cafeteria-rutafuel.webp | — | ~13 KB |
 
 Esto responde directamente al punto de la consigna sobre tiempo de carga y organización de recursos: el
 peso total de las imágenes usadas en el sitio se redujo en más del 95%. Los archivos originales se
