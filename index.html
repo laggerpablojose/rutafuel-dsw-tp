@@ -43,70 +43,158 @@
 
     <main id="contenido-principal" class="flex-grow-1">
 
-        <!-- Portada: completar contenido final según mockup del TP1 -->
+        <!-- Portada: hero con carousel de Bootstrap (1 de los componentes JS requeridos) -->
         <section class="page-hero">
             <div class="container">
                 <div class="row align-items-center g-4">
-                    <div class="col-lg-7">
+                    <div class="col-lg-6">
                         <p class="text-accent fw-semibold mb-2">Estación de servicio</p>
-                        <h1 class="display-5 fw-bold">RutaFuel</h1>
-                        <p class="lead">Una propuesta institucional para presentar servicios, promociones e información
-                            útil para quienes están en camino.</p>
+                        <h1 class="display-5 fw-bold">Más que combustible, somos parte de tu ruta</h1>
+                        <p class="lead">En RutaFuel acompañamos tu camino con dedicación y confianza. Cada parada es
+                            una oportunidad para ofrecer una atención cercana en el momento que la necesites.</p>
                         <a class="btn btn-rutafuel btn-lg" href="servicios.html"
                             data-rf-event="cta-inicio-servicios">Ver servicios</a>
                     </div>
 
-                    <div class="col-lg-5">
-                        <div class="placeholder-box text-center">
-                            <p class="mb-0">Espacio reservado para imagen principal o recurso visual de portada.</p>
+                    <div class="col-lg-6">
+                        <div id="carouselRutaFuel" class="carousel slide rounded-4 overflow-hidden shadow-sm"
+                            data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselRutaFuel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Fachada de RutaFuel"></button>
+                                <button type="button" data-bs-target="#carouselRutaFuel" data-bs-slide-to="1"
+                                    aria-label="Surtidores de RutaFuel"></button>
+                                <button type="button" data-bs-target="#carouselRutaFuel" data-bs-slide-to="2"
+                                    aria-label="Cobertura de RutaFuel"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/content/fachada-estacion-noche.webp" class="d-block w-100"
+                                        alt="Fachada iluminada de una estación de servicio RutaFuel durante la noche">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/content/surtidores-rutafuel.webp" class="d-block w-100"
+                                        alt="Surtidores de combustible RutaFuel con mangueras de Infinia, Super y Diesel 500">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/content/mapa-cobertura-rutafuel.webp" class="d-block w-100"
+                                        alt="Mapa con la cobertura de estaciones RutaFuel en Argentina">
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRutaFuel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselRutaFuel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Resumen de secciones internas -->
+        <!-- Nuestros servicios: contenido real definido en el TP1 -->
         <section class="section-padding">
             <div class="container">
-                <h2 class="mb-4">Secciones principales</h2>
+                <h2 class="mb-4">Nuestros servicios</h2>
 
                 <div class="row g-4">
-                    <article class="col-md-6 col-lg-3">
-                        <div class="card card-rutafuel">
+                    <article class="col-md-4 col-lg-2">
+                        <div class="card card-rutafuel text-center">
                             <div class="card-body">
-                                <h3 class="h5">Servicios</h3>
-                                <p>Base para presentar combustibles, tienda y atención al cliente.</p>
-                                <a href="servicios.html" class="stretched-link">Ver sección</a>
+                                <h3 class="h6 mb-0">Combustible</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4 col-lg-2">
+                        <div class="card card-rutafuel text-center">
+                            <div class="card-body">
+                                <h3 class="h6 mb-0">DNC</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4 col-lg-2">
+                        <div class="card card-rutafuel text-center">
+                            <div class="card-body">
+                                <h3 class="h6 mb-0">Full</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4 col-lg-2">
+                        <div class="card card-rutafuel text-center">
+                            <div class="card-body">
+                                <h3 class="h6 mb-0">Lubricantes</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4 col-lg-2">
+                        <div class="card card-rutafuel text-center">
+                            <div class="card-body">
+                                <h3 class="h6 mb-0">Cafetería</h3>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4 col-lg-2">
+                        <div class="card card-rutafuel text-center">
+                            <div class="card-body">
+                                <h3 class="h6 mb-0">Lavado</h3>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="text-end mt-3 mb-0">
+                    <a href="servicios.html">Ver el detalle de todos los servicios →</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Bloques destacados del TP1: app, cercanía, cuidado del auto, viaje en un solo lugar -->
+        <section class="section-padding bg-soft">
+            <div class="container">
+                <h2 class="mb-4">Pensado para tu viaje</h2>
+
+                <div class="row g-4">
+                    <article class="col-md-6">
+                        <div class="card card-rutafuel h-100">
+                            <div class="card-body">
+                                <h3 class="h5">App RutaFuel</h3>
+                                <p>Pedí, pagá y sumá puntos desde el celular en cualquiera de nuestras estaciones.</p>
                             </div>
                         </div>
                     </article>
 
-                    <article class="col-md-6 col-lg-3">
-                        <div class="card card-rutafuel">
+                    <article class="col-md-6">
+                        <div class="card card-rutafuel h-100">
                             <div class="card-body">
-                                <h3 class="h5">Promociones</h3>
-                                <p>Base para destacar beneficios, descuentos y novedades.</p>
-                                <a href="promociones.html" class="stretched-link">Ver sección</a>
+                                <h3 class="h5">RutaFuel más cercana</h3>
+                                <p>Encontrá la estación RutaFuel más cercana, sin importar en qué tramo de tu viaje estés.</p>
+                                <a href="ubicacion.html" class="stretched-link">Ver ubicaciones</a>
                             </div>
                         </div>
                     </article>
 
-                    <article class="col-md-6 col-lg-3">
-                        <div class="card card-rutafuel">
+                    <article class="col-md-6">
+                        <div class="card card-rutafuel h-100">
                             <div class="card-body">
-                                <h3 class="h5">Nosotros</h3>
-                                <p>Base para comunicar identidad, valores e historia ficticia.</p>
-                                <a href="nosotros.html" class="stretched-link">Ver sección</a>
+                                <h3 class="h5">El mejor cuidado para tu auto</h3>
+                                <p>En RutaFuel cuidamos tu vehículo en cada parada, sin importar cuánto te falte para llegar.</p>
                             </div>
                         </div>
                     </article>
 
-                    <article class="col-md-6 col-lg-3">
-                        <div class="card card-rutafuel">
+                    <article class="col-md-6">
+                        <div class="card card-rutafuel h-100">
                             <div class="card-body">
-                                <h3 class="h5">Ubicación</h3>
-                                <p>Base para mostrar dirección, referencia y datos de llegada.</p>
-                                <a href="ubicacion.html" class="stretched-link">Ver sección</a>
+                                <h3 class="h5">Todo para tu viaje en un solo lugar</h3>
+                                <p>Combustible, tienda Full y cafetería para que no tengas que parar dos veces.</p>
+                                <a href="promociones.html" class="stretched-link">Ver promociones</a>
                             </div>
                         </div>
                     </article>
