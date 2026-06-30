@@ -11954,7 +11954,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-color: var(--rutafuel-light);
 }
 
-.page-hero h1, .page-hero .h1 {
+.page-hero h1,
+.page-hero .h1 {
   color: var(--rutafuel-dark);
 }
 
@@ -12122,5 +12123,71 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     padding: 3rem 0;
   }
 }
+/* =========================================================
+   Página Nosotros
+========================================================= */
+/* Hero específico de Nosotros */
+.page-hero-nosotros {
+  position: relative;
+  min-height: 80vh;
+  background-image: url("../img/content/fachada-estacion-noche.webp");
+  background-size: cover;
+  background-position: center;
+}
 
-/*# sourceMappingURL=main.css.map */
+.page-hero-nosotros .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(34, 34, 59, 0.65);
+}
+
+.page-hero-nosotros .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Imagen institucional de Nosotros */
+.img-box-nosotros {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  animation: fade-in-up-nosotros 1s ease;
+}
+
+.img-box-nosotros img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.img-box-nosotros .overlay-img {
+  position: absolute;
+  inset: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box-nosotros:hover img {
+  transform: scale(1.05);
+}
+
+.img-box-nosotros:hover .overlay-img {
+  background-color: rgba(34, 34, 59, 0.15);
+}
+
+@keyframes fade-in-up-nosotros {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Formulario de Nosotros */
+.form-nosotros {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}

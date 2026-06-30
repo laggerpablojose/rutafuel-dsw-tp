@@ -7,7 +7,7 @@
 
     <title>Ubicación | RutaFuel</title>
     <meta name="description"
-        content="Ubicación de RutaFuel, estación de servicio ficticia. Consultá referencia, horarios y datos básicos para llegar fácilmente.">
+        content="Encontrá fácilmente la ubicación de RutaFuel, consultá horarios de atención y datos de contacto para llegar a la estación de servicio.">
 
     <link rel="icon" type="image/png" href="img/logo/logo-rutafuel.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +21,7 @@
 
     <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 
+    <!-- Header común del sitio -->
     <header class="site-header">
         <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
             <div class="container">
@@ -36,7 +37,8 @@
 
                 <div class="collapse navbar-collapse" id="navbarRutaFuel">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
@@ -50,80 +52,102 @@
 
     <main id="contenido-principal" class="flex-grow-1">
 
-        <section class="page-hero">
-            <div class="container">
-                <p class="text-accent fw-semibold mb-2">Sección individual asignada</p>
-                <h1 class="display-5 fw-bold">Ubicación</h1>
-                <p class="lead">Encontrá RutaFuel fácilmente y consultá la información básica para llegar.</p>
-                <a href="#mapa" class="btn btn-rutafuel btn-lg" data-rf-event="cta-ubicacion-mapa">Ver mapa</a>
-            </div>
-        </section>
-
-        <section id="mapa" class="section-padding">
-            <div class="container">
-                <h2 class="mb-4">Encontranos fácilmente</h2>
-
-                <div class="row g-4 align-items-stretch">
-                    <div class="col-lg-8">
-                        <!-- Reemplazar este bloque por imagen de mapa o componente definido en el mockup -->
-                        <div class="placeholder-box h-100 d-flex align-items-center justify-content-center text-center">
-                            <p class="mb-0">Espacio reservado para mapa o imagen de ubicación de RutaFuel.</p>
-                        </div>
-                    </div>
-
-                    <aside class="col-lg-4">
-                        <div class="card card-rutafuel h-100">
-                            <div class="card-body">
-                                <h2 class="h4">Datos rápidos</h2>
-                                <p><strong>Dirección:</strong> completar dirección ficticia.</p>
-                                <p><strong>Horario:</strong> completar horario de atención.</p>
-                                <p><strong>Referencia:</strong> completar referencia geográfica.</p>
-                                <a href="#" class="btn btn-rutafuel" data-rf-event="ubicacion-como-llegar">Cómo
-                                    llegar</a>
-                            </div>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </section>
-
+        <!-- Sección Ubicación: estructura visual según mockup TP1 -->
         <section class="section-padding bg-soft">
             <div class="container">
-                <h2 class="mb-4">Información útil</h2>
 
-                <div class="row g-4">
-                    <article class="col-md-4">
-                        <div class="card card-rutafuel">
-                            <div class="card-body">
-                                <h3 class="h5">Ubicación</h3>
-                                <p>Completar con zona, ciudad o punto de referencia.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="col-md-4">
-                        <div class="card card-rutafuel">
-                            <div class="card-body">
-                                <h3 class="h5">Horarios</h3>
-                                <p>Completar con horarios de atención definidos por el grupo.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="col-md-4">
-                        <div class="card card-rutafuel">
-                            <div class="card-body">
-                                <h3 class="h5">Contacto</h3>
-                                <p>Completar con teléfono, correo o dato institucional ficticio.</p>
-                            </div>
-                        </div>
-                    </article>
+                <!-- Título y subtítulo -->
+                <div class="row justify-content-center text-center mb-4">
+                    <div class="col-12 col-lg-8">
+                        <h1 class="display-5 fw-bold mb-3">Encontranos fácilmente</h1>
+                        <p class="lead mb-0">Ubicados estratégicamente para acompañarte en tu viaje.</p>
+                    </div>
                 </div>
+
+                <!-- Mapa principal: elemento de mayor jerarquía visual -->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-xl-10">
+                        <figure class="mb-4">
+                            <img src="img/content/mapa-cobertura-rutafuel.webp"
+                                class="img-fluid w-100 rounded-4 shadow-sm"
+                                alt="Mapa de cobertura y ubicación de la estación de servicio RutaFuel">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- CTA principal debajo del mapa -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-auto">
+                        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-rutafuel btn-lg px-5" data-rf-event="ubicacion-como-llegar"
+                            aria-label="Abrir Google Maps para ver cómo llegar a RutaFuel">
+                            Cómo llegar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tarjetas informativas inferiores -->
+                <div class="row g-4">
+
+                    <article class="col-12 col-md-4">
+                        <div class="card card-rutafuel h-100 overflow-hidden">
+                            <div class="ratio ratio-16x9">
+                                <img src="img/content/surtidores-rutafuel.webp" class="card-img-top object-fit-cover"
+                                    alt="Surtidores de combustible de RutaFuel">
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h2 class="h4 card-title">Ubicación</h2>
+                                <p class="card-text mb-0">
+                                    Nos encontramos en un punto estratégico para acompañarte durante tus recorridos y
+                                    facilitar cada parada.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-md-4">
+                        <div class="card card-rutafuel h-100 overflow-hidden">
+                            <div class="ratio ratio-16x9">
+                                <img src="img/content/fachada-estacion-noche.webp" class="card-img-top object-fit-cover"
+                                    alt="Fachada nocturna de la estación de servicio RutaFuel">
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h2 class="h4 card-title">Horarios</h2>
+                                <p class="card-text mb-0">
+                                    Atención amplia para que puedas cargar combustible, consultar servicios y continuar
+                                    tu viaje.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="col-12 col-md-4">
+                        <div class="card card-rutafuel h-100 overflow-hidden">
+                            <div class="ratio ratio-16x9">
+                                <img src="img/content/personal-rutafuel.webp" class="card-img-top object-fit-cover"
+                                    alt="Personal de RutaFuel brindando atención al cliente">
+                            </div>
+
+                            <div class="card-body text-center">
+                                <h2 class="h4 card-title">Contacto</h2>
+                                <p class="card-text mb-0">
+                                    Nuestro equipo está disponible para orientarte y responder consultas sobre la
+                                    estación y sus servicios.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
             </div>
         </section>
 
     </main>
 
+    <!-- Footer común del sitio -->
     <footer class="site-footer text-white py-4 mt-auto">
         <div class="container">
             <div class="row gy-4 align-items-center">
@@ -170,7 +194,10 @@
         </div>
     </footer>
 
+    <!-- Bootstrap JS: necesario para navbar collapse y otros componentes -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript propio -->
     <script src="js/main.js"></script>
 </body>
 
