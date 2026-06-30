@@ -23,6 +23,12 @@
   --rutafuel-dark: #22223b;
 }
 
+/* Tipografía de títulos: Poppins le da un trazo más moderno y prolijo
+   que la fuente base, reservada para textos largos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headings;
+}
+
 /* Mejora básica de navegación por teclado */
 .skip-link {
   position: absolute;
@@ -107,6 +113,145 @@
   border: 1px solid #e2e2ea;
   border-radius: 1rem;
   height: 100%;
+}
+
+/* Carousel del hero: altura controlada para que no domine toda la pantalla */
+.carousel-hero .carousel-item img {
+  height: 420px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-hero .carousel-item img {
+    height: 260px;
+  }
+}
+
+/* Footer: logo, redes sociales y texto legal */
+.site-footer ul li {
+  margin-bottom: .25rem;
+}
+
+.footer-logo {
+  background-color: #fff;
+  border-radius: .5rem;
+  padding: .25rem .5rem;
+}
+
+.footer-social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .15);
+  color: #fff;
+  font-size: 1.1rem;
+  transition: background-color .2s ease;
+}
+
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+  background-color: rgba(255, 255, 255, .3);
+  color: #fff;
+}
+
+.footer-legal {
+  font-size: .8rem;
+  opacity: .85;
+}
+
+/* Efecto de zoom al pasar el mouse sobre imágenes de servicios */
+.img-zoom-wrap {
+  overflow: hidden;
+}
+
+.img-zoom-wrap img {
+  transition: transform .3s ease;
+}
+
+.img-zoom-wrap:hover img {
+  transform: scale(1.08);
+}
+
+/* Hero de portada: bordes violeta arriba/abajo y título de tamaño moderado,
+   según el boceto Whimsical (el display-5 por defecto quedaba muy grande) */
+.hero-bordered {
+  border-top: 3px solid var(--rutafuel-accent);
+  border-bottom: 3px solid var(--rutafuel-accent);
+}
+
+.hero-title {
+  font-size: 2.1rem;
+  line-height: 1.25;
+}
+
+/* Franja "Nuestros servicios": fondo gris con borde superior/inferior oscuro,
+   título centrado en mayúsculas y 6 recuadros con icono */
+.services-strip {
+  padding: 3rem 0;
+  background-color: var(--rutafuel-light);
+  border-top: 1px solid #d7d7e3;
+  border-bottom: 1px solid #d7d7e3;
+}
+
+.services-title {
+  font-size: 1.4rem;
+  letter-spacing: .03em;
+  color: var(--rutafuel-dark);
+  margin-bottom: 2rem;
+}
+
+.service-box {
+  background-color: #fff;
+  border: 1px solid #d7d7e3;
+  border-radius: .75rem;
+  padding: 1.25rem .5rem;
+}
+
+.service-box i {
+  display: block;
+  font-size: 1.75rem;
+  color: var(--rutafuel-accent);
+  margin-bottom: .5rem;
+}
+
+.service-box h3 {
+  font-size: .8rem;
+  color: var(--rutafuel-dark);
+}
+
+/* Sección "Pensado para tu viaje": 3 columnas separadas por una línea fina,
+   según el boceto Whimsical (reemplaza la grilla de 4 cards) */
+.three-col-divided > .col-md-4 {
+  border-right: 1px solid #d7d7e3;
+}
+
+.three-col-divided > .col-md-4:last-child {
+  border-right: none;
+}
+
+.three-col-divided h3 {
+  color: var(--rutafuel-dark);
+}
+
+.three-col-logo {
+  max-width: 140px;
+}
+
+@media (max-width: 767px) {
+  .three-col-divided > .col-md-4 {
+    border-right: none;
+    border-bottom: 1px solid #d7d7e3;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .three-col-divided > .col-md-4:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 }
 
 /* Responsive mínimo adicional al comportamiento de Bootstrap */
