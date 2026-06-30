@@ -25,7 +25,20 @@
     la única disponible para ese momento mostraba productos de una marca comercial real (no ficticia), lo
     que generaría un conflicto de marca dentro de un proyecto institucional propio. Queda pendiente
     reemplazarla por una fotografía propia de un box de servicio si el grupo consigue una.
-- Pendiente de completar por cada integrante a medida que se avance con Promociones, Nosotros y Ubicación.
+
+- ### Ubicación
+
+La página `ubicacion.html` se implementó respetando la estructura definida en el mockup del TP1. Se mantuvo el orden visual previsto: título principal, subtítulo, mapa de cobertura como elemento central, botón “Cómo llegar” y tres tarjetas informativas correspondientes a Ubicación, Horarios y Contacto.
+
+El mapa ocupa la mayor jerarquía visual de la página porque la función principal de esta sección es permitir que el usuario identifique rápidamente la ubicación de RutaFuel. Debajo del mapa se ubicó el botón “Cómo llegar”, que funciona como llamado a la acción principal de la página.
+
+Las tres tarjetas inferiores complementan la información principal sin quitarle protagonismo al mapa. Cada tarjeta incorpora una imagen representativa, un título y un texto breve, manteniendo coherencia visual con el mockup y con el resto del sitio.
+
+Como adaptación técnica, el mapa fue implementado mediante una imagen local ubicada en `img/content/mapa-cobertura-rutafuel.webp`, en lugar de utilizar una API externa o un iframe de Google Maps. Esta decisión permite mantener una solución simple, liviana y acorde al alcance académico del TP2, evitando dependencias externas innecesarias.
+
+El botón “Cómo llegar” se vinculó a Google Maps mediante un enlace externo simple y se le incorporó el atributo `data-rf-event="ubicacion-como-llegar"`, permitiendo que el archivo común `js/main.js` capture la interacción sin agregar lógica específica para esta página.
+
+La página fue probada en escritorio, tablet y celular. En escritorio, el mapa se presenta en formato ancho y las tres tarjetas se muestran en una fila. En resoluciones menores, la estructura se adapta mediante el sistema responsive de Bootstrap, manteniendo el mapa visible, el botón centrado y las tarjetas ordenadas verticalmente cuando corresponde.
 
 ## Estructura del sitio
 
@@ -65,7 +78,7 @@ Avance actual (3 de los 4 componentes mínimos exigidos por la consigna):
 Pendiente (a definir por las páginas restantes — Promociones, Nosotros): un cuarto componente, con
 candidatos ya identificados en el wireframe del TP1: Modal para el detalle de cada promoción, o reutilizar
 la validación de formularios en el formulario "trabajá con nosotros" de Nosotros (en ese caso habría que
-sumar un componente distinto, como Accordion o Toast, para llegar a 4 componentes *distintos*).
+sumar un componente distinto, como Accordion o Toast, para llegar a 4 componentes _distintos_).
 
 ## JavaScript propio
 
@@ -102,13 +115,13 @@ nombres que incluían espacios y errores de codificación (por ejemplo, `Fachada
 Noche.png`). Se generó una copia optimizada en `img/content/`, en formato WebP, con nombres en minúsculas
 sin espacios ni acentos:
 
-| Nombre original | Nombre nuevo | Peso original | Peso optimizado |
-|---|---|---|---|
-| Fachada Estación de servicio Noche.png | fachada-estacion-noche.webp | ~1.78 MB | ~92 KB |
-| Surtidores RutaFuel.png | surtidores-rutafuel.webp | ~1.85 MB | ~72 KB |
-| Mapa ubicaciones RutaFuel.png | mapa-cobertura-rutafuel.webp | ~1.80 MB | ~75 KB |
-| Personal RutaFuel.png | personal-rutafuel.webp | ~1.86 MB | ~64 KB |
-| (fotografía nueva, cafetería) | cafeteria-rutafuel.webp | — | ~13 KB |
+| Nombre original                        | Nombre nuevo                 | Peso original | Peso optimizado |
+| -------------------------------------- | ---------------------------- | ------------- | --------------- |
+| Fachada Estación de servicio Noche.png | fachada-estacion-noche.webp  | ~1.78 MB      | ~92 KB          |
+| Surtidores RutaFuel.png                | surtidores-rutafuel.webp     | ~1.85 MB      | ~72 KB          |
+| Mapa ubicaciones RutaFuel.png          | mapa-cobertura-rutafuel.webp | ~1.80 MB      | ~75 KB          |
+| Personal RutaFuel.png                  | personal-rutafuel.webp       | ~1.86 MB      | ~64 KB          |
+| (fotografía nueva, cafetería)          | cafeteria-rutafuel.webp      | —             | ~13 KB          |
 
 Esto responde directamente al punto de la consigna sobre tiempo de carga y organización de recursos: el
 peso total de las imágenes usadas en el sitio se redujo en más del 95%. Los archivos originales se
