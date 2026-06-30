@@ -11948,7 +11948,8 @@ textarea.form-control-lg {
   background-color: var(--rutafuel-light);
 }
 
-.page-hero h1, .page-hero .h1 {
+.page-hero h1,
+.page-hero .h1 {
   color: var(--rutafuel-dark);
 }
 
@@ -11980,106 +11981,71 @@ textarea.form-control-lg {
     padding: 3rem 0;
   }
 }
-
-/* =========================================
-   HERO SOLO NOSOTROS
-========================================= */
+/* =========================================================
+   Página Nosotros
+========================================================= */
+/* Hero específico de Nosotros */
 .page-hero-nosotros {
-    position: relative;
-    min-height: 80vh;
-    background-image: url('../img/content/fachada-estacion-noche.webp');
-    background-size: cover;
-    background-position: center;
+  position: relative;
+  min-height: 80vh;
+  background-image: url("../img/content/fachada-estacion-noche.webp");
+  background-size: cover;
+  background-position: center;
 }
 
-/* overlay oscuro */
 .page-hero-nosotros .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(34, 34, 59, 0.65);
+  position: absolute;
+  inset: 0;
+  background: rgba(34, 34, 59, 0.65);
 }
 
-/* asegurar que el contenido quede arriba */
 .page-hero-nosotros .container {
-    z-index: 2;
-    position: relative;
+  position: relative;
+  z-index: 2;
 }
 
-/* =========================================
-   HERO SOLO NOSOTROS
-========================================= */
-
-
-/* ==========================
-   Imagen identidad NOSOTROS
-========================== */
-
+/* Imagen institucional de Nosotros */
 .img-box-nosotros {
-    position: relative;
-    overflow: hidden;
-    border-radius: 1rem;
-
-    /* animación */
-    animation: fadeInUp 1s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  animation: fade-in-up-nosotros 1s ease;
 }
 
 .img-box-nosotros img {
-    width: 100%;
-    display: block;
-    transition: transform 0.4s ease;
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
-/* overlay */
-.overlay-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: 0.3s;
+.img-box-nosotros .overlay-img {
+  position: absolute;
+  inset: 0;
+  transition: background-color 0.3s ease;
 }
 
-/* hover (efecto moderno) */
 .img-box-nosotros:hover img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .img-box-nosotros:hover .overlay-img {
-    background: rgba(34, 34, 59, 0.15);
+  background-color: rgba(34, 34, 59, 0.15);
 }
 
-/* animación entrada */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+@keyframes fade-in-up-nosotros {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-/* ==========================
-   Imagen identidad NOSOTROS
-========================== */
-
-/* ==========================
-   form  NOSOTROS
-========================== */
-
+/* Formulario de Nosotros */
 .form-nosotros {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
-
-/* ==========================
-   form  NOSOTROS
-========================== */
-
-/*# sourceMappingURL=main.css.map */
