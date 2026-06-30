@@ -11981,4 +11981,105 @@ textarea.form-control-lg {
   }
 }
 
+/* =========================================
+   HERO SOLO NOSOTROS
+========================================= */
+.page-hero-nosotros {
+    position: relative;
+    min-height: 80vh;
+    background-image: url('../img/content/fachada-estacion-noche.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* overlay oscuro */
+.page-hero-nosotros .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(34, 34, 59, 0.65);
+}
+
+/* asegurar que el contenido quede arriba */
+.page-hero-nosotros .container {
+    z-index: 2;
+    position: relative;
+}
+
+/* =========================================
+   HERO SOLO NOSOTROS
+========================================= */
+
+
+/* ==========================
+   Imagen identidad NOSOTROS
+========================== */
+
+.img-box-nosotros {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    /* animación */
+    animation: fadeInUp 1s ease;
+}
+
+.img-box-nosotros img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* overlay */
+.overlay-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+/* hover (efecto moderno) */
+.img-box-nosotros:hover img {
+    transform: scale(1.05);
+}
+
+.img-box-nosotros:hover .overlay-img {
+    background: rgba(34, 34, 59, 0.15);
+}
+
+/* animación entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================
+   Imagen identidad NOSOTROS
+========================== */
+
+/* ==========================
+   form  NOSOTROS
+========================== */
+
+.form-nosotros {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+/* ==========================
+   form  NOSOTROS
+========================== */
+
 /*# sourceMappingURL=main.css.map */
