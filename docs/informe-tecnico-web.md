@@ -25,20 +25,7 @@
     la única disponible para ese momento mostraba productos de una marca comercial real (no ficticia), lo
     que generaría un conflicto de marca dentro de un proyecto institucional propio. Queda pendiente
     reemplazarla por una fotografía propia de un box de servicio si el grupo consigue una.
-
-- ### Ubicación
-
-La página `ubicacion.html` se implementó respetando la estructura definida en el mockup del TP1. Se mantuvo el orden visual previsto: título principal, subtítulo, mapa de cobertura como elemento central, botón “Cómo llegar” y tres tarjetas informativas correspondientes a Ubicación, Horarios y Contacto.
-
-El mapa ocupa la mayor jerarquía visual de la página porque la función principal de esta sección es permitir que el usuario identifique rápidamente la ubicación de RutaFuel. Debajo del mapa se ubicó el botón “Cómo llegar”, que funciona como llamado a la acción principal de la página.
-
-Las tres tarjetas inferiores complementan la información principal sin quitarle protagonismo al mapa. Cada tarjeta incorpora una imagen representativa, un título y un texto breve, manteniendo coherencia visual con el mockup y con el resto del sitio.
-
-Como adaptación técnica, el mapa fue implementado mediante una imagen local ubicada en `img/content/mapa-cobertura-rutafuel.webp`, en lugar de utilizar una API externa o un iframe de Google Maps. Esta decisión permite mantener una solución simple, liviana y acorde al alcance académico del TP2, evitando dependencias externas innecesarias.
-
-El botón “Cómo llegar” se vinculó a Google Maps mediante un enlace externo simple y se le incorporó el atributo `data-rf-event="ubicacion-como-llegar"`, permitiendo que el archivo común `js/main.js` capture la interacción sin agregar lógica específica para esta página.
-
-La página fue probada en escritorio, tablet y celular. En escritorio, el mapa se presenta en formato ancho y las tres tarjetas se muestran en una fila. En resoluciones menores, la estructura se adapta mediante el sistema responsive de Bootstrap, manteniendo el mapa visible, el botón centrado y las tarjetas ordenadas verticalmente cuando corresponde.
+- Pendiente de completar por cada integrante a medida que se avance con Promociones, Nosotros y Ubicación.
 
 ## Estructura del sitio
 

@@ -9,6 +9,11 @@
     <meta name="description"
         content="Promociones y beneficios de RutaFuel para clientes, viajeros y usuarios frecuentes de la estación de servicio.">
 
+    <link rel="icon" type="image/png" href="img/logo/logo-rutafuel.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -19,7 +24,10 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">RutaFuel</a>
+                <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                    <img src="img/logo/logo-rutafuel.png" alt="Logo de RutaFuel" width="36" height="24">
+                    <span class="fs-4">RutaFuel</span>
+                </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRutaFuel"
                     aria-controls="navbarRutaFuel" aria-expanded="false" aria-label="Abrir navegación">
@@ -107,16 +115,48 @@
     </main>
 
     <footer class="site-footer text-white py-4 mt-auto">
-        <div class="container text-center text-md-start">
-            <div class="row align-items-center g-3">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0">&copy; <span class="js-anio">2026</span> RutaFuel. Proyecto académico UTN FRSF.</p>
+                    <p class="fw-bold mb-2">RUTAFUEL</p>
+                    <nav aria-label="Enlaces del pie de página">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+                            <li><a href="promociones.html" class="text-white text-decoration-none">Promociones</a></li>
+                            <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                            <li><a href="ubicacion.html" class="text-white text-decoration-none">Ubicación</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="index.html" class="text-white text-decoration-none me-3">Inicio</a>
-                    <a href="ubicacion.html" class="text-white text-decoration-none">Ubicación</a>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <img src="img/logo/logo-test.png" alt="RutaFuel" class="footer-logo mb-3" width="160">
+                    <div class="footer-social d-flex justify-content-center justify-content-md-end gap-2">
+                        <a href="#" class="footer-social-icon" aria-label="YouTube de RutaFuel">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#" class="footer-social-icon" aria-label="LinkedIn de RutaFuel">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="footer-social-icon" aria-label="TikTok de RutaFuel">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="#" class="footer-social-icon" aria-label="Instagram de RutaFuel">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-icon" aria-label="Facebook de RutaFuel">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            <hr class="border-light opacity-25 my-4">
+
+            <p class="footer-legal text-center text-md-start mb-0">
+                RUTAFUEL S.R.L. Todos los derechos reservados. Copyright <span class="js-anio">2026</span>.
+                Términos y condiciones - Política de privacidad.
+            </p>
         </div>
     </footer>
 

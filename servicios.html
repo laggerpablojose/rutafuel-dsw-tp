@@ -9,6 +9,11 @@
     <meta name="description"
         content="Conocé los servicios principales de RutaFuel: combustibles, tienda, atención al viajero y asistencia básica.">
 
+    <link rel="icon" type="image/png" href="img/logo/logo-rutafuel.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -19,7 +24,10 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">RutaFuel</a>
+                <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+                    <img src="img/logo/logo-rutafuel.png" alt="Logo de RutaFuel" width="36" height="24">
+                    <span class="fs-4">RutaFuel</span>
+                </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarRutaFuel"
                     aria-controls="navbarRutaFuel" aria-expanded="false" aria-label="Abrir navegación">
@@ -45,9 +53,9 @@
         <!-- Hero: carousel ancho + título y bajada institucional, según mockup definitivo del TP1 -->
         <section class="page-hero">
             <div class="container">
-                <h1 class="display-5 fw-bold text-center mb-4">Tu parada estratégica en el camino</h1>
+                <h1 class="display-5 fw-bold text-center my-4">Tu parada estratégica en el camino</h1>
 
-                <div id="carouselServicios" class="carousel slide rounded-4 overflow-hidden shadow-sm mb-4"
+                <div id="carouselServicios" class="carousel slide carousel-hero rounded-4 overflow-hidden shadow-sm mb-4"
                     data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="0"
@@ -55,7 +63,7 @@
                         <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="1"
                             aria-label="Fachada de RutaFuel"></button>
                         <button type="button" data-bs-target="#carouselServicios" data-bs-slide-to="2"
-                            aria-label="Cobertura de RutaFuel"></button>
+                            aria-label="Identidad de marca RutaFuel"></button>
                     </div>
 
                     <div class="carousel-inner">
@@ -68,8 +76,8 @@
                                 alt="Fachada iluminada de una estación de servicio RutaFuel durante la noche">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/content/mapa-cobertura-rutafuel.webp" class="d-block w-100"
-                                alt="Mapa con la cobertura de estaciones RutaFuel en Argentina">
+                            <img src="img/content/marca-rutafuel-noche.webp" class="d-block w-100"
+                                alt="Estación RutaFuel de noche con el logo y el slogan de la marca superpuestos">
                         </div>
                     </div>
 
@@ -95,14 +103,16 @@
         <!-- Nuestros servicios: 3 bloques imagen + texto en zigzag, según mockup definitivo -->
         <section class="section-padding">
             <div class="container">
-                <h2 class="mb-4 text-center">Nuestros servicios</h2>
+                <h2 class="display-6 fw-bold my-4 text-center">Nuestros servicios</h2>
 
-                <div class="row g-4 align-items-center mb-5">
+                <div class="row g-4 align-items-center mb-4">
                     <div class="col-lg-6">
-                        <img src="img/content/surtidores-rutafuel.webp" class="img-fluid rounded-4"
-                            alt="Surtidores de combustible premium RutaFuel">
+                        <div class="img-zoom-wrap rounded-4">
+                            <img src="img/content/surtidores-rutafuel.webp" class="img-fluid rounded-4"
+                                alt="Surtidores de combustible premium RutaFuel">
+                        </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 text-center">
                         <h3 class="h4">Combustibles de Máxima Evolución</h3>
                         <p>Cargá la máxima tecnología en tu motor. Nuestras naftas y diésel premium están
                             desarrollados con aditivos de última generación que limpian los sistemas de
@@ -114,12 +124,16 @@
                     </div>
                 </div>
 
-                <div class="row g-4 align-items-center mb-5">
+                <hr class="my-5">
+
+                <div class="row g-4 align-items-center mb-4">
                     <div class="col-lg-6 order-lg-2">
-                        <img src="img/content/cafeteria-rutafuel.webp" class="img-fluid rounded-4"
-                            alt="Taza de café servida en la cafetería de RutaFuel">
+                        <div class="img-zoom-wrap rounded-4">
+                            <img src="img/content/cafeteria-rutafuel.webp" class="img-fluid rounded-4"
+                                alt="Taza de café servida en la cafetería de RutaFuel">
+                        </div>
                     </div>
-                    <div class="col-lg-6 order-lg-1">
+                    <div class="col-lg-6 order-lg-1 text-center">
                         <h3 class="h4">Pará, Recargá y Continuá</h3>
                         <p>Hacé de tu parada un momento de disfrute. En nuestra tienda te esperamos con café
                             de especialidad, recién molido, opciones gastronómicas frescas para cada momento
@@ -131,12 +145,16 @@
                     </div>
                 </div>
 
+                <hr class="my-5">
+
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-6">
-                        <img src="img/content/personal-rutafuel.webp" class="img-fluid rounded-4"
-                            alt="Personal de RutaFuel listo para atender tu vehículo">
+                        <div class="img-zoom-wrap rounded-4">
+                            <img src="img/content/personal-rutafuel.webp" class="img-fluid rounded-4"
+                                alt="Personal de RutaFuel listo para atender tu vehículo">
+                        </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 text-center">
                         <h3 class="h4">Cuidado Experto para tu Vehículo</h3>
                         <p>Mantené tu auto en perfectas condiciones sin perder tiempo. En nuestros boxes te
                             ofrecemos cambio de aceite y filtros con marcas líderes, revisión de fluidos y un
@@ -193,16 +211,48 @@
     </main>
 
     <footer class="site-footer text-white py-4 mt-auto">
-        <div class="container text-center text-md-start">
-            <div class="row align-items-center g-3">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
                 <div class="col-md-6">
-                    <p class="mb-0">&copy; <span class="js-anio">2026</span> RutaFuel. Proyecto académico UTN FRSF.</p>
+                    <p class="fw-bold mb-2">RUTAFUEL</p>
+                    <nav aria-label="Enlaces del pie de página">
+                        <ul class="list-unstyled mb-0">
+                            <li><a href="servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+                            <li><a href="promociones.html" class="text-white text-decoration-none">Promociones</a></li>
+                            <li><a href="nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                            <li><a href="ubicacion.html" class="text-white text-decoration-none">Ubicación</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="index.html" class="text-white text-decoration-none me-3">Inicio</a>
-                    <a href="ubicacion.html" class="text-white text-decoration-none">Ubicación</a>
+
+                <div class="col-md-6 text-center text-md-end">
+                    <img src="img/logo/logo-test.png" alt="RutaFuel" class="footer-logo mb-3" width="160">
+                    <div class="footer-social d-flex justify-content-center justify-content-md-end gap-2">
+                        <a href="#" class="footer-social-icon" aria-label="YouTube de RutaFuel">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="#" class="footer-social-icon" aria-label="LinkedIn de RutaFuel">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="footer-social-icon" aria-label="TikTok de RutaFuel">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="#" class="footer-social-icon" aria-label="Instagram de RutaFuel">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-icon" aria-label="Facebook de RutaFuel">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            <hr class="border-light opacity-25 my-4">
+
+            <p class="footer-legal text-center text-md-start mb-0">
+                RUTAFUEL S.R.L. Todos los derechos reservados. Copyright <span class="js-anio">2026</span>.
+                Términos y condiciones - Política de privacidad.
+            </p>
         </div>
     </footer>
 
